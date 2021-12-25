@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    font-family:'Lexend Zetta', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #f1f2f7;
+}
+
+
+
+.loader >img{
+    width: 300px;
+}
+
+
+.big-container{
+    width: 100%;
+    height: 100vh;
+    max-width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+video{
+    position: absolute;
+    top: -1%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hi{
+    width: 100%;
+    height: 100vh;
+    color: #000000;
+}
+
+.hi h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 17rem;
+    font-weight:500;
+}
+
+.hi h2{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-top: 30rem;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.hi p{
+    font-size: .9rem;
+    text-align: left;
+    margin-top: 25rem;
+    font-weight: 400;
+    padding: 50px;
+    line-height: 2rem;
+}
+
+
+.resume{
+    width: 7rem;
+    height: 2.75rem;
+    background-color: #000000;
+    color: #f1f2f7;
+    margin-left: 55px;
+    margin-top: 3rem;
+    border: 0 solid #000000;
+}
+
+.resume:hover{
+    background-color: transparent;
+    color: #000000;
+    border: 3px solid #000000;
+}
+
+.contact{
+    width: 7rem;
+    height: 2.75rem;
+    background-color: #000000;
+    color: #f1f2f7;
+    margin-left: 35px;
+    margin-top: 3rem;
+    border: 0 solid #000000;
+}
+
+.contact:hover{
+    background-color: transparent;
+    color: #000000;
+    border: 3px solid #000000;
+}
+
+.portfolio{
+    width: 5.5rem;
+    height: 1.8rem;
+    background-color: #000000;
+    color: #f1f2f7;
+    border: 0 solid #000000;
+}
+
+.portfolio:hover{
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+@media  (min-width: 800px) {
+    .hi h1{
+        font-size: 5rem;
+        font-weight: 600;
+
+    }
+
+    .hi h2{
+        font-size: 4rem;
+    }
+    
+    .hi p{
+        font-size: 1.15rem;
+    }
+    
+}
