@@ -4,26 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f1f2f7">
     <title>Kunal Thakkar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function(){
+       
+        $('.slidebarbtn').click(function(){
+       
+        $('.slidebarbtn').toggleClass('active');
+       
+        $('.header01').toggleClass('enjoy');
+       
+        })
+       
+        })
+       
+    </script>
+
+
 </head>
 <body>
     <div id="preloader"></div>
+
+    <header class="header01">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about/about.html">About</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Code</a></li>
+            <li><a href="contact/contact.html">Contact</a></li>
+
+            <img src="assets/logo.svg"/>
+        </ul>
+            <p class="slidebarbtn">Menu</p>
+
+    </header>
+
+
     <div class="big-container">
         <div class="container">
-            <header>
             
-            </header>
 <div class="hi">
             <h1>Namaste</h1>
-            <h2>I'm </br>Kunal Thakkar</h2>
+            <h2>I'm</br>Kunal Thakkar</h2>
             <a href="assets/KunalThakkarResume.pdf" download><button class="resume">Resume</button></a>
-            <a href="" ><button class="contact">Contact</button></a>
+            <a href="contact/contact.html" ><button class="contact">Contact</button></a>
 
 
-            <p>An Engineering student who loves to 
-                <a href=""><button class="portfolio">design</button></a> and <a href=""><button class="portfolio">&ltcode&gt</button></a> 
+           <!-- <p>An Engineering student who loves to 
+                <a href=""><button class="portfolio" id="design">design</button></a> and <a href=""><button class="portfolio" id="code">&ltcode&gt</button></a> 
             </br>
         </br>
                 
@@ -47,8 +80,98 @@
                 people find value in. 
                 Whether you'd like to discuss building an idea 
                 together, ask me a question or just want to say hi, 
-                my inbox is always open :)</p>
+                my inbox is always open :)</p> -->
+
+                <section>
+                    <div class="wrap">
+                        <h3>Part Designer</h3>
+                        
+                            <p>UI Design</p>
+                            <p>Design System</p>
+                            <p>Graphic Design</p>
+                            <p>"Making It Pop!"</p>
+                        
+                    </div>
+                    <br>
+                    <br>
+
+                    <img src="contact/assets/me.svg"/>
+                    <br>
+                    <br>
+
+                    <div class="wrap1">
+                        <h3>Part Coder</h3>
+                        
+                            <p>Front-end</p>
+                            <p>HTML/CSS</p>
+                            <p>JavaScript</p>
+                            <p>Solidity (kinda)</p>
+                        
+                    </div>
+                </section>
+
+                <section id="doc">
+                    <p>An Engineering student who loves to 
+                        <a href=""><button class="portfolio" id="design">design</button></a> and <a href=""><button class="portfolio" id="code">&ltcode&gt</button></a> 
+                    </br>
+                </br>
+                        
+                        I started a company called Parallel Pvt. 
+                        which is the parent company to all my projects 
+                        as well as a Custom Design/Software Development 
+                        Agency. 
+                    </br>
+                </br>
+                        
+                        In the world of Cocktails , you've got to 
+                        have a perfect mix. I'm like a great mix with just 
+                        right balance of hardwork, fresh perspective and 
+                        seasoned knowledge to create something beautiful 
+                        and innovative.
+                    </br>
+                </br>
+                        
+                        
+                        I love executing ideas and build something that 
+                        people find value in. 
+                        Whether you'd like to discuss building an idea 
+                        together, ask me a question or just want to say hi, 
+                        my inbox is always open :)</p>
+
+                </section>
+                
+
+<footer>
+<div class="footwrap">
+    <div class="logo">
+        <img src="assets/logo.svg">
+    </div>
+
+    <div class="links">
+        <h4>Kunal Who?</h4>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about/about.html">About</a></li>
+            <li><a href="index.html">Design</a></li>
+            <li><a href="index.html">Code</a></li>
+    </div>
+
+    <div class="connect">
+        <h4>Connect On</h4>
+            <li><a href="index.html">Github</a></li>
+            <li><a href="index.html">Linkedin</a></li>
+            <li><a href="index.html">Instagram</a></li>
+            <li><a href="index.html">YouTube</a></li>
+    </div>
+
+
+
+
+</footer>
+<p class="copy">&copy 2021-Kunal Thakkar</p>
+<div class="email"><a href="">namaste@kuchbhikunal.com</a> </br>
+    <a>Mumbai, Bharat</a>  
 </div>
+
 
             <video src="assets/loopbg.mp4" autoplay muted loop></video>
         </div>

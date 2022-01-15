@@ -17,6 +17,8 @@ body{
 
 
 
+
+
 #preloader{
     background: #f1f2f7 url(preloader.svg) no-repeat center center;
     height: 100vh;
@@ -24,6 +26,8 @@ body{
     position: fixed;
     z-index: 100;
 }
+
+/*common*/
 
 .big-container{
     width: 100%;
@@ -57,11 +61,125 @@ video{
     z-index: -1;
 }
 
+/*Navbar*/
+
+body{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Zetta', sans-serif; 
+}
+   
+header{
+   position: absolute; 
+   top: 0;
+   left: -230px;
+   width: 230px; 
+   height: 100%; 
+   background: #00000009; 
+   transition: .8s;
+   backdrop-filter: blur(10px);
+   z-index: 10;
+} 
+   
+header img{
+    margin: 40px 50px;
+    width: 50%;
+    opacity: 60%;
+    cursor: pointer;
+}
+
+header img:hover{
+    opacity: 75%;
+}
+
+header.enjoy{ 
+   left: 0; 
+}
+
+   
+ul{ 
+    margin: 20px 15px; 
+    padding-right: 10px; 
+} 
+
+   
+ul li{ 
+    list-style: none; 
+} 
+
+   
+ul li a{
+   display: block; 
+   color: #383838; 
+   text-decoration: none;
+   text-align: left; 
+   transition: 0.3s;
+   font-size: 1.15rem; 
+   margin-bottom: 25px;
+   margin-top: 30px; 
+   padding: 20px 25px; 
+}
+
+   
+ul li a:hover{  
+   color: #c4c4c4;
+} 
+   
+
+.slidebarbtn{
+   position: absolute;
+   top: 30px; 
+   right: -120px; 
+   width: 93px;
+   height: 35px;
+   transition: 0.3s;
+   background-color: #000000; 
+   color: #f1f2f7;
+   padding: 7px;
+   padding-left: 13px;
+   cursor: pointer;
+   backdrop-filter: blur (0px);
+} 
+
+.slidebarbtn:hover{
+    color: #000000;
+    background-color: #f1f2f7;
+    border: solid 2px #000000;
+}
+
+
+
+
 .hi{
     width: 100%;
     height: 100vh;
     color: #000000;
 }
+
+.hi h1::selection{
+    background-color: #0000005d;
+    color: #f1f2f7;
+}
+
+.hi h2::selection{
+    background-color: #0000005d;
+    color: #f1f2f7;
+}
+
+.hi p::selection{
+    background-color: #0000005d;
+    color: #f1f2f7;
+}
+
+br::selection{
+    background-color: #0000005d;
+}
+
+ h3::selection{
+    background-color: #0000005d;
+    color: #f1f2f7;
+}
+
 
 .hi h1{
     font-size: 2.5rem;
@@ -78,6 +196,7 @@ video{
     padding-left: 50px;
 }
 
+/*
 .hi p{
     font-size: .9rem;
     text-align: left;
@@ -86,7 +205,7 @@ video{
     padding: 50px;
     line-height: 2rem;
 }
-
+*/
 
 .resume{
     width: 7rem;
@@ -96,6 +215,7 @@ video{
     margin-left: 55px;
     margin-top: 3rem;
     border: 0 solid #000000;
+    cursor: pointer;
 }
 
 .resume:hover{
@@ -109,9 +229,10 @@ video{
     height: 2.75rem;
     background-color: #000000;
     color: #f1f2f7;
-    margin-left: 30px;
+    margin-left: 35px;
     margin-top: 3rem;
     border: 0 solid #000000;
+    cursor: pointer;
 }
 
 .contact:hover{
@@ -120,12 +241,21 @@ video{
     border: 3px solid #000000;
 }
 
+.resume::selection{
+    background-color: #000000;
+}
+
+.contact::selection{
+    background-color: #000000;
+}
+
 .portfolio{
     width: 5.5rem;
     height: 1.8rem;
     background-color: #000000;
     color: #f1f2f7;
     border: 0 solid #000000;
+    cursor: pointer;
 }
 
 .portfolio:hover{
@@ -133,6 +263,172 @@ video{
     color: #000000;
     border: 2px solid #000000;
 }
+
+.portfolio::selection{
+    background-color: #000000;
+}
+
+
+/*intro*/
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 22rem;
+    margin-bottom: 0;
+}
+
+section h3{
+    padding-bottom: 1.2rem;
+    font-weight: 600;
+
+}
+
+section p{
+    line-height: 3rem;
+}
+
+section img{
+    width: 350px;
+}
+
+.wrap p{
+    text-align: center;
+}
+
+.wrap h3{
+    text-align: center;
+}
+
+.wrap1{
+    text-align: center;
+}
+
+.wrap1{
+    text-align: center;
+}
+
+#doc{
+    width: 100%;
+    height: 100vh;
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+}
+
+#doc p{
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 400;
+    padding: 50px;
+    line-height: 2rem;
+}
+
+
+/*footer*/
+footer{
+    margin-top: -7rem;
+    background-color: #00000009;
+    backdrop-filter: blur(10px);
+    padding: 4rem;
+   
+}
+
+.footwrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.logo{
+    padding: 2rem;
+}
+
+.links{
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.connect{
+    cursor: pointer;
+}
+
+.links a:hover{
+    color: #c4c4c4;
+}
+
+.connect a:hover{
+    color: #c4c4c4;
+}
+
+footer h4{
+    line-height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer li{
+    list-style: none;
+    line-height: 2rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #383838;
+}
+
+.email{
+    margin-bottom: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.email a{
+    font-size:.75rem;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #383838;
+}
+
+
+.copy {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+
+@media  (min-width: 800px){
+    section{
+        margin-top: 11rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+
+    section img{
+        width: 45%;
+    }
+
+    section h3{
+        font-size: 1.3rem;
+    }
+    
+    section p{
+        line-height: 3rem;
+        font-size: .5rem;
+    }
+
+    .footwrap{
+        flex-direction: row;
+    }
+
+}
+
+
 
 @media  (min-width: 800px) {
     .hi h1{
@@ -147,6 +443,35 @@ video{
     
     .hi p{
         font-size: 1.15rem;
+    }
+    
+}
+
+@media (min-width: 500px){
+    #doc{
+       
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+    }
+
+}
+
+
+@media (min-width: 600px){
+    #doc{
+       
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+    }
+    
+}
+
+
+@media (min-width: 800px){
+    #doc{
+       
+        margin-top: -5rem;
+        margin-bottom: 7rem;
     }
     
 }
