@@ -20,7 +20,7 @@ body{
 
 
 #preloader{
-    background: #f1f2f7 url(preloader.svg) no-repeat center center;
+    background: #f1f2f7 url(../preloader.svg) no-repeat center center;
     height: 100vh;
     width: 100%;
     position: fixed;
